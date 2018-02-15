@@ -10,7 +10,7 @@ img
 	width: 100%;
 }
 
-#contenedor
+#contenido
 {
 	background-color: #82c3a6;
 	margin: auto;
@@ -19,10 +19,23 @@ img
 	flex-wrap: wrap;
 }
 
+#imagenRetrato, #imagenPaisaje
+{
+	background-color: #d5c75f;
+	width: 50%;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+#contenido > .imgBox
+{
+	background-color: #82c3a6;
+}
+
 #banner
 {
 	width: 100%;
-	padding: 10px 30px;
+	padding: 10px 50px;
     box-sizing: border-box;
 }
 
@@ -31,12 +44,7 @@ img
 	height: 350px;
 }
 
-#imagenRetrato, #imagenPaisaje
-{
-	width: 50%;
-	padding: 10px;
-	box-sizing: border-box;
-}
+
 #cabecera
 {
 	border-radius: 10px 10px 0 0;
@@ -81,18 +89,6 @@ img
    text-decoration: none;
 }
 
-#imgSecundaria
-{
-	background-color: #d5c75f;
-	border: 1px;
-	text-align: center;
-}
-
-#imgSecundaria img
-{
-	width: 40% ;
-}
-
 #pie
 {
 	/*text-align: center;*/
@@ -122,4 +118,11 @@ img
 #pie  > div
 {
 	width: 25%;
+}
+
+@media(max-width: 900px)
+{
+	#pie > div, #titulo, #menu, #contenido > * {
+		width: 100%;
+	}
 }
