@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no"> <!-- Indica que el width se adapte al dispotivo-->
+	<meta name="viewport" content="width=device-width, user-scalable=yes"> <!-- Indica que el width se adapte al dispotivo-->
 	<meta name="autor" content="Yeltsing tovar"> <!-- Nombre del autor -->
 	<meta name="keywords" content="html,css,xml,javascript">
 	<meta name="description" content="Maldito maduro 2">
@@ -12,68 +12,67 @@
 	<title>Next U</title>
 </head>
 <body>
+	<header id="cabecera">
+		<h1 id="titulo">Comenzando con la fotografía</h1>
+		<nav id="menu">
+			<ul>
+				<li><a href="#inicio" >Inicio</a></li>
+				<li><a href="#paisajes" >Paisajes</a></li>
+				<li><a href="#retratos" >Retratos</a></li>
+			</ul>
+		</nav>
+	</header>
+
 	<div id="contenedor">
-		<header id="cabecera">
-			<span id="titulo">Comenzando con la fotografía</span>
-			<nav id="menu">
-				<ul>
-					<li><a href="#inicio" >Inicio</a></li>
-					<li><a href="#paisajes" >Paisajes</a></li>
-					<li><a href="#retratos" >Retratos</a></li>
-				</ul>
-			</nav>
-		</header>
+		<picture id="banner">
+			<img class="P1" src="img/isla_tortuga_head.jpg" alt="Banner">
+		</picture>
 
+		
+		<article id="imagenRetrato">
+			<a href="#retratos" ><img src="img/isla_tortuga_head.jpg"></a> 
+		</article>
+		
+		<article id="imagenPaisaje">
+			<a href="#paisajes"> <img src="img/isla_tortuga_head.jpg"></a>
+		</article>
+		
 
-			
-			<picture id="banner">
-				<img class="P1" src="img/isla_tortuga_head.jpg" alt="Banner" width="650px" height="300px">
-			</picture>
-			
-
-			<article id="imgSecundaria">
-				<aside>
-					<img src="img/isla_tortuga_head.jpg">
-					<img src="img/isla_tortuga_head.jpg">
-
-				</aside>
-			</article>
-
-
-		<footer id="pie">
-			<div>
-				Contacto
-				<ul>
-					<li>123</li>
-					<li>123</li>
-					<li>123</li>
-				</ul>
-			</div>
-			<div>
-				Terminos
-				<ul>
-					<li>123</li>
-					<li>123</li>
-					<li>123</li>
-				</ul>
-			</div>
-			<div>
-				Redes Sociales
-				<ul>
-					<li>123</li>
-					<li>123</li>
-					<li>123</li>
-				</ul>
-			</div>
-			<div>
-				Terminos
-				<ul>
-					<li>123</li>
-					<li>123</li>
-					<li>123</li>
-				</ul>
-			</div>
-		</footer>
 	</div>
+
+	<footer id="pie">
+		<div>
+			<h3>Contacto</h3>
+			<ul>
+				<li>123</li>
+				<li>123</li>
+				<li>123</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Terminos</h3>
+			<ul>
+				<li>123</li>
+				<li>123</li>
+				<li>123</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Redes Sociales</h3>
+			<ul>
+				<li>123</li>
+				<li>123</li>
+				<li>123</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Terminos</h3>
+			<ul>
+				<li>123</li>
+				<li>123</li>
+				<li>123</li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
