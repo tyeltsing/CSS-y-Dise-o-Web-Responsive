@@ -12,6 +12,7 @@ img
 	background-color: #82c3a6;
 	margin: auto;
 	width: 900px;
+	text-align: center;
 }
 
 #banner
@@ -21,7 +22,8 @@ img
 
 #banner img
 {
-	width: 40%;
+	 width: 650px;
+    height: 300px;
 }
 #cabecera
 {
