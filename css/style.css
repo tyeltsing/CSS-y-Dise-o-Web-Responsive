@@ -1,10 +1,17 @@
 body
 {
-	font-family: Helvetica, arial;
+	font-family: "Dancing Script", Helvetica, "Time New Roman";
+	background-color: #02010a;
+}
+img
+{
+	box-shadow: 2px 2px 3px #02010a;
 }
 #contenedor
 {
 	background-color: #82c3a6;
+	margin: auto;
+	width: 900px;
 }
 
 #banner
