@@ -154,7 +154,8 @@ img
 	}
 }
 
-@-webkit-keyframes animacionPaisaje{
+@-webkit-keyframes animacionPaisaje
+{
   0% {
     position: relative;
     left: 0px;
@@ -168,4 +169,34 @@ img
     position: relative;
     left: 0px;
   }
+}
+
+.foto-content{
+	background-color: #d5c75f !important;
+	display: flex !important;
+ 	flex-flow: row wrap !important;
+ 	box-sizing: border-box;
+}
+
+.foto-content picture
+{
+  margin: 50px auto;
+  width: 30%;
+}
+
+.blur
+{
+  -webkit-filter:blur(10px)
+}
+.grayscale
+{
+  -webkit-filter:grayscale(100%)
+}
+.foto-content picture:nth-child(2n)
+{
+  -webkit-filter:grayscale(100%)
+}
+.sepia
+{
+  -webkit-filter:sepia(90%)
 }
