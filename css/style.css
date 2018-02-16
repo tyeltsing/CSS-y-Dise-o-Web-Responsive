@@ -16,6 +16,7 @@ img
 	margin: auto;
 	width: 900px;
 	display: flex;
+	box-sizing: border-box;
 	flex-wrap: wrap;
 }
 
@@ -25,7 +26,22 @@ img
 	width: 50%;
 	padding: 50px;
 	box-sizing: border-box;
+	border: 1px;
+	text-align: center;
 }
+
+#imagenPaisaje img:hover
+{
+	transform: rotate(10deg);
+  	box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
+#imagenRetrato img:hover
+{
+	animation: animacionPaisaje 1s;
+  	box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
 
 #contenido > .imgBox
 {
@@ -118,11 +134,38 @@ img
 #pie  > div
 {
 	width: 25%;
+	
 }
+
+.icon img
+{
+
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	width: 40px;
+}
+
 
 @media(max-width: 900px)
 {
 	#pie > div, #titulo, #menu, #contenido > * {
 		width: 100%;
 	}
+}
+
+@-webkit-keyframes animacionPaisaje{
+  0% {
+    position: relative;
+    left: 0px;
+  }
+  50% {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
 }
