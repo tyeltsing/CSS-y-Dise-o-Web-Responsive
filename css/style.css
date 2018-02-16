@@ -8,6 +8,7 @@ img
 {
 	box-shadow: 2px 2px 3px #02010a;
 	width: 100%;
+	transition: all 0.5s ease;
 }
 
 #contenido
@@ -38,15 +39,10 @@ img
 
 #imagenRetrato img:hover
 {
-	animation: animacionPaisaje 1s;
   	box-shadow: 2px 2px 2px 2px #82c3a6;
+  	transform: translate(20px, -5px); 
 }
 
-
-#contenido > .imgBox
-{
-	background-color: #82c3a6;
-}
 
 #banner
 {
@@ -55,16 +51,9 @@ img
     box-sizing: border-box;
 }
 
-#banner img
-{
-	height: 350px;
-}
-
-
 #cabecera
 {
 	border-radius: 10px 10px 0 0;
-	height: 100px;
 	background-color: #5b7989;
 	display: flex;
 	flex-wrap: wrap;
@@ -73,9 +62,12 @@ img
 	margin: auto;
     padding: 10px;
 	align-items: center;
+	animation-name: slidein;
+	animation-duration: 1.5s
 }
 
-#cabecera > *
+#cabecera > #titulo,
+#cabecera > nav
 {
 	width: 50%;
 }
@@ -85,16 +77,19 @@ img
 	color:white;
 	text-shadow: 2px 2px #02010a;
 }
+#menu {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
 #menu ul
 {
 	list-style-type: none;
-  	text-align: right;
 }
 
 #menu li
 {
 	display: inline;
-  	/*text-align: center;*/
   	margin: 0 10px 0 0;
 }
 
@@ -103,13 +98,12 @@ img
    padding: 2px 7px 2px 7px;
    color: #fff;
    text-decoration: none;
+   font-size: 20px;
 }
 
 #pie
 {
-	/*text-align: center;*/
 	background-color: #C6d5c5;
-	/*border: solid 2px red;*/
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
@@ -143,32 +137,14 @@ img
 	border-radius: 5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	width: 40px;
+	width: 25px;
 }
 
-
-@media(max-width: 900px)
+.icon a 
 {
-	#pie > div, #titulo, #menu, #contenido > * {
-		width: 100%;
-	}
-}
+	text-decoration: none;
+	color: #000;
 
-@-webkit-keyframes animacionPaisaje
-{
-  0% {
-    position: relative;
-    left: 0px;
-  }
-  50% {
-    position: relative;
-    left: 20px;
-    bottom: 5px;
-  }
-  100% {
-    position: relative;
-    left: 0px;
-  }
 }
 
 .foto-content{
@@ -180,8 +156,9 @@ img
 
 .foto-content picture
 {
-  margin: 50px auto;
-  width: 30%;
+  width: calc(100%/3);
+  padding: 20px 20px 20px 20px;
+  box-sizing: border-box;
 }
 
 .blur
@@ -199,4 +176,32 @@ img
 .sepia
 {
   -webkit-filter:sepia(90%)
+}
+
+
+@media (max-width: 900px)
+{
+	#cabecera,
+	#contenido,
+	#pie > div, 
+	#titulo, 
+	nav, 
+	#menu,
+	#pie,
+	#contenido > * 
+	{
+		width: 100% !important;
+		text-align: center;
+	}
+}
+
+@keyframes slidein {
+    0% {margin-top: 150%;}
+    60% {margin-top: -5%;}
+    100% {margin-top: 0%;}
+}
+
+.active
+{
+	    border-bottom: 2px solid !important;
 }
